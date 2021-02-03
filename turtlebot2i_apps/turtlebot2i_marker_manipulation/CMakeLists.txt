@@ -23,7 +23,7 @@ add_action_files(FILES
 generate_messages(DEPENDENCIES actionlib_msgs geometry_msgs)
 catkin_package(DEPENDS actionlib actionlib_msgs pcl_ros roscpp visualization_msgs arbotix_msgs moveit_core moveit_ros_planning_interface)
 
-add_compile_options("-std=c++11")
+add_compile_options("-std=c++14")
 
 # nodes
 add_executable(tool_detection_action_server src/tool_detection_action_server.cpp)
